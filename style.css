@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --cream: hsl(30, 38%, 92%);
+  --dark-cyan: hsl(158, 36%, 37%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --paragraph-font: 14px;
+  --montserrat: "Montserrat", sans-serif;
+  --fraunces: "Fraunces", serif;
+}
+
+body {
+  background-color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 500px;
+  width: 100%;
+  height: 420px;
+  margin-top: 10%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  background-color: var(--white);
+}
+img {
+  width: 250px;
+  height: 420px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.content {
+  margin: 20px;
+}
+h1 {
+  font-family: var(--fraunces);
+}
+h3 {
+  color: var(--dark-cyan);
+  font-size: 28px;
+  font-family: var(--fraunces);
+  word-spacing: 15px;
+}
+h4 {
+  color: var(--dark-grayish-blue);
+  font-family: var(--montserrat);
+  letter-spacing: 5px;
+  font-size: 12px;
+}
+p {
+  font-size: 14px;
+  font-family: var(--montserrat);
+  color: var(--very-dark-blue);
+}
+.action-btn {
+  width: 190px;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  margin-bottom: 50px;
+}
+span {
+  font-size: x-small;
+  font-size: 12px;
+  color: var(--dark-grayish-blue);
+  text-decoration-line: line-through;
+}
+
+@media (max-width: 1440px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 390px;
+    width: 100%;
+    height: 700px;
+    margin-top: 10%;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    background-color: var(--white);
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    width: 390px;
+    height: 350px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+  .content {
+    margin: 30px;
+  }
+  p {
+    text-align: justify;
+  }
+  .action-btn {
+    width: 325px;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+  }
+}
