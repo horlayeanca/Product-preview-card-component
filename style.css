@@ -127,5 +127,6 @@ span {
     background-color: var(--dark-cyan);
     color: var(--white);
     margin-left: 20px;
+    margin-bottom: 10px;
   }
 }
