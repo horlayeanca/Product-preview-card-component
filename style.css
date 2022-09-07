@@ -37,6 +37,10 @@ img {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
 }
+.cart{
+  width: 17px;
+  height: 15px;
+}
 .content {
   margin: 20px;
 }
@@ -68,6 +72,11 @@ p {
   background-color: var(--dark-cyan);
   color: var(--white);
   margin-bottom: 50px;
+  transition: .4s;
+}
+.action-btn:hover{
+  background-color: var(--dark-grayish-blue);
+  cursor: pointer;
 }
 span {
   font-size: x-small;
